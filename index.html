@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Keuangan Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Catatan Keuangan</h2>
+        
+        <select id="tipe">
+            <option value="pemasukan">Pemasukan (+)</option>
+            <option value="pengeluaran">Pengeluaran (-)</option>
+        </select>
+        
+        <input type="text" id="keterangan" placeholder="Keterangan (misal: Modal Kripto)">
+        <input type="number" id="jumlah" placeholder="Jumlah (Rp)">
+        <button onclick="tambahData()">Simpan Transaksi</button>
+        
+        <div class="result-box">
+            <h3>Saldo Bersih: <span id="total">Rp 0</span></h3>
+        </div>
+        
+        <ul id="list-pengeluaran"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
